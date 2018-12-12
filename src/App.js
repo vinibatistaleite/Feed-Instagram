@@ -1,25 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Post from './componente/post';
+import Paisagem from './componente/paisagem.jpg';
+import Paisagem2 from './componente/paisagem2.jpeg';
+import Paisagem3 from './componente/paisagem3.jpg';
+import './style.css';
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="tela">
+       <Post title="viny_batistaa" src={Paisagem2} text="bbbbbb"/>
+       <Post title="segatoy" src={Paisagem3} text="aaaaa"/>
+       <Post title="mrblack" src={Paisagem3} text="cccccccc"/>
+
+
       </div>
     );
   }
